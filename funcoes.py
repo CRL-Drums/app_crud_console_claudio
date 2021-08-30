@@ -3,10 +3,12 @@
 #imports
 from entidades import Conta
 import os
-try:
-    console_clear = lambda: os.system('clear')
-except:
-    console_clear = lambda: os.system('cls')
+
+# Função para limpar o console para as entradas em cada menu
+
+console_clear = lambda: os.system('cls')
+# Se seu sistema for Linux/Mac comente a de cima e descomente a debaixo.
+#console_clear = lambda: os.system('clear')
 
 
 # Variáveis estáticas
@@ -32,9 +34,9 @@ def cadastro():
 
         while(contador < quantidade_selecionada):
             print()
-            print("Digite o nome, telefone, email, twitter e instagram")
+            print("Digite o nome, telefone, email, twitter e instagram\n")
             print("Exemplo:")
-            print("nome telefone email twitter instagram")
+            print("nome telefone email twitter instagram\n")
 
             escolha = input()
             escolha_array = escolha.split(' ')
@@ -55,7 +57,7 @@ def cadastro():
 def remover():
 
     print("- Remover - \n")
-    relatorio()
+    listar_por_item()
     print("\nDigite o número do ID correspondente ao nome do usuário que deseja remover: ")
 
     try:

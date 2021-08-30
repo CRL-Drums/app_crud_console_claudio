@@ -6,10 +6,10 @@ import os
 from funcoes import cadastro, alterar, remover, consultar, relatorio
 
 # Função para limpar o console para as entradas em cada menu
-try:
-    console_clear = lambda: os.system('clear')
-except:
-    console_clear = lambda: os.system('cls')
+
+console_clear = lambda: os.system('cls')
+# Se seu sistema for Linux/Mac comente a de cima e descomente a debaixo.
+#console_clear = lambda: os.system('clear')
 
 # Inicio da aplicação
 
