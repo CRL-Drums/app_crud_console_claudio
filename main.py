@@ -1,23 +1,33 @@
-# Atividade agenda telefônica by: Cláudio Lima
+"""Atividade agenda telefônica by: Cláudio Lima"""
 
+
+#imports
 import os
-from metodos import *
+from funcoes import cadastro, alterar, remover, consultar, relatorio
+
+#Função para limpar o console para as entradas em cada menu
 try:
     console_clear = lambda: os.system('clear')
 except:
     console_clear = lambda: os.system('cls')
 
+#Inicio da aplicação
 
-print("-= Agenda -=\n")
+# Tela de boas-vindas
+print("\n-=              Agenda              -=\n")
+print("- Atividade Avaliativa de Cláudio Rocha Lima -\n")
 
 
 opcao_selecionada_menu = 0
 
-while(not opcao_selecionada_menu == 6):
+#Menu princial
+while not opcao_selecionada_menu == 6:
 
+    # Atribuido o valor da opcao a '0' para que sempre que retorne ao menu a opção não seja alguma possivel para entrar em outro menu.
     opcao_selecionada_menu = 0
 
     try:
+        # Tela do menu
         print("Selecione uma das opções abaixo: \n")
 
         print("1 - Cadastrar")
@@ -29,6 +39,9 @@ while(not opcao_selecionada_menu == 6):
 
         opcao_selecionada_menu = int(input())
 
+        # Condicionais para cada opção selecionada
+        # Todos os 'console_clear()'são invocados para que o console seja limpo.
+        
         if opcao_selecionada_menu == 1:
             console_clear()
             cadastro()
@@ -48,10 +61,9 @@ while(not opcao_selecionada_menu == 6):
         if opcao_selecionada_menu == 5:
             console_clear()
             relatorio()
-            voltar = input("\nPressione qualquer tecla para voltar")
-
     except:
         console_clear()
         print("Digite uma opção válida.")
             
+    #limpando novamente para o retorno do bloco do código chamando o 'Menu Principal'
     console_clear()
