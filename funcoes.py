@@ -9,11 +9,13 @@ except:
     console_clear = lambda: os.system('cls')
 
 
-#Variáveis estáticas
+# Variáveis estáticas
 quantidade_selecionada = 0
+
+# Criada a lista para armazenamento das contas
 lista = []
 
-#Funções do Menu principal
+# Funções do Menu principal
 def cadastro():
     print("- Cadastrar -\n")
     print("Selecione a quantidade de usuários que você deseja cadastrar: ")

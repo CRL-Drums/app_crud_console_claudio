@@ -5,13 +5,13 @@
 import os
 from funcoes import cadastro, alterar, remover, consultar, relatorio
 
-#Função para limpar o console para as entradas em cada menu
+# Função para limpar o console para as entradas em cada menu
 try:
     console_clear = lambda: os.system('clear')
 except:
     console_clear = lambda: os.system('cls')
 
-#Inicio da aplicação
+# Inicio da aplicação
 
 # Tela de boas-vindas
 print("\n-=              Agenda              -=\n")
@@ -65,5 +65,5 @@ while not opcao_selecionada_menu == 6:
         console_clear()
         print("Digite uma opção válida.")
             
-    #limpando novamente para o retorno do bloco do código chamando o 'Menu Principal'
+    # Limpando novamente para o retorno do bloco do código chamando o 'Menu Principal'
     console_clear()
