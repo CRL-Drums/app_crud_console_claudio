@@ -147,4 +147,4 @@ def printar_por_id(index):
 
 # Função apenas para printar. Já que ela se repete várias vezes, preferi criar um método para o código não ficar repetitivo.
 def print_voltar_ao_menu():
-    return input("\nPressione qualquer tecla para voltar ao Menu.")
+    return input("\nPressione ENTER para voltar ao Menu.")
