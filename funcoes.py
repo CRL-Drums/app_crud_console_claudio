@@ -34,9 +34,9 @@ def cadastro():
 
         while(contador < quantidade_selecionada):
             print()
-            print("Digite o nome, telefone, email, twitter e instagram\n")
+            print("Digite o nome, telefone, email, twitter e facebook\n")
             print("Exemplo:")
-            print("nome telefone email twitter instagram\n")
+            print("nome telefone email twitter facebook\n")
 
             escolha = input()
             escolha_array = escolha.split(' ')
@@ -83,10 +83,10 @@ def alterar():
     
     try:
         id = int(input())
-        print("Digite o nome, telefone, email, twitter e instagram\n")
+        print("Digite o nome, telefone, email, twitter e facebook\n")
 
         print("Exemplo:")
-        print("nome telefone email twitter instagram")
+        print("nome telefone email twitter facebook")
 
         escolha = input()
         escolha_array = escolha.split(' ')
