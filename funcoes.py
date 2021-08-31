@@ -119,7 +119,7 @@ def consultar():
 
 
 def relatorio():
-    print("- Consultar - \n")
+    print("- Relatório - \n")
     print("Número, Nome, E-mail, Twitter, Facebook\n")
     listar_por_item()
     print_voltar_ao_menu()
